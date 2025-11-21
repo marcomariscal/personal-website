@@ -1,6 +1,8 @@
-Welcome to your new TanStack app! 
+# Marco Mariscal's Personal Website
 
-# Getting Started
+A modern personal website for Marco Mariscal, built with TanStack Router and React. 
+
+## Getting Started
 
 To run this application:
 
@@ -9,7 +11,7 @@ bun install
 bun --bun run start
 ```
 
-# Building For Production
+## Building For Production
 
 To build this application for production:
 
@@ -32,8 +34,22 @@ This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
 
 
 
+## Project Structure
+
+```
+├── public/          # Static assets
+├── src/
+│   ├── components/  # Reusable React components
+│   ├── data/        # Data files and mocks
+│   ├── routes/      # File-based routing
+│   └── styles.css   # Global styles
+├── package.json     # Dependencies and scripts
+└── README.md        # This file
+```
+
 ## Routing
-This project uses [TanStack Router](https://tanstack.com/router). The initial setup is a file based router. Which means that the routes are managed as files in `src/routes`.
+
+This project uses [TanStack Router](https://tanstack.com/router) with file-based routing. Routes are managed as files in `src/routes`.
 
 ### Adding A Route
 
@@ -281,10 +297,10 @@ Once we've created the derived store we can use it in the `App` component just l
 
 You can find out everything you need to know on how to use TanStack Store in the [TanStack Store documentation](https://tanstack.com/store/latest).
 
-# Demo files
+## Demo Files
 
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
+Files in the `src/routes/demo/` directory can be safely deleted. They provide examples of TanStack Router features and can serve as a starting point for development.
 
-# Learn More
+## Learn More
 
 You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
