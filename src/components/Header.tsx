@@ -101,7 +101,7 @@ export default function Header() {
 						{/* CTA Button */}
 						<a
 							href="mailto:marco.a.mariscal@gmail.com"
-							className="hidden sm:inline-flex items-center h-8 px-3 rounded-full bg-[var(--color-primary)] text-black text-[13px] font-bold hover:bg-[var(--color-primary-hover)] transition-colors shadow-[0_0_10px_rgba(0,255,0,0.3)]"
+							className="hidden sm:inline-flex items-center h-8 px-3 rounded-full bg-[var(--color-primary)] text-black text-[13px] font-bold hover:bg-[var(--color-primary-hover)] transition-colors shadow-[0_0_10px_rgba(16,185,129,0.3)]"
 						>
 							Contact
 						</a>

@@ -217,7 +217,7 @@ function Card({
 				className="pointer-events-none absolute -inset-px transition duration-300"
 				style={{
 					opacity,
-					background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(0, 255, 0, 0.15), transparent 40%)`,
+					background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(16, 185, 129, 0.15), transparent 40%)`,
 				}}
 			/>
 
@@ -226,7 +226,7 @@ function Card({
 				className="pointer-events-none absolute -inset-px transition duration-300"
 				style={{
 					opacity,
-					background: `radial-gradient(400px circle at ${position.x}px ${position.y}px, rgba(0, 255, 0, 0.2), transparent 40%)`,
+					background: `radial-gradient(400px circle at ${position.x}px ${position.y}px, rgba(16, 185, 129, 0.2), transparent 40%)`,
 					maskImage: "linear-gradient(black, black), linear-gradient(black, black)",
 					maskClip: "content-box, border-box",
 					maskComposite: "exclude",
@@ -416,8 +416,8 @@ function Portfolio() {
 											{edu.degree}
 										</div>
 										<ul className="text-[15px] text-text-muted leading-relaxed space-y-1 list-disc list-inside marker:text-text-subtle">
-											{edu.details.map((detail, index) => (
-												<li key={index}>{detail}</li>
+											{edu.details.map((detail) => (
+												<li key={detail}>{detail}</li>
 											))}
 										</ul>
 									</div>
