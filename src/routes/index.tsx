@@ -314,13 +314,6 @@ function Portfolio() {
 								<div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
 								<div className="relative z-10 flex flex-col md:flex-row md:gap-8 md:items-start">
-									{/* Icon Placeholder */}
-									<div className="hidden md:flex shrink-0 w-12 h-12 rounded-lg bg-white/5 items-center justify-center border border-white/10">
-										<span className="text-xl font-bold text-text-muted">
-											{job.company.charAt(0)}
-										</span>
-									</div>
-
 									<div className="flex-1">
 										<div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
 											<h3 className="text-xl font-semibold text-text-main flex items-center gap-2">
@@ -422,12 +415,6 @@ function Portfolio() {
 								<div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
 								<div className="relative z-10 flex flex-col md:flex-row md:gap-8 md:items-start">
-									<div className="hidden md:flex shrink-0 w-12 h-12 rounded-lg bg-white/5 items-center justify-center border border-white/10">
-										<span className="text-xl font-bold text-text-muted">
-											{edu.school.charAt(0)}
-										</span>
-									</div>
-
 									<div className="flex-1">
 										<div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
 											<h3 className="text-xl font-semibold text-text-main flex items-center gap-2">
