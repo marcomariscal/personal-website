@@ -1,19 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
+import clsx from "clsx";
 import { motion } from "framer-motion";
 import {
+	ArrowUpRight,
+	Briefcase,
+	Code2,
+	Database,
 	Github,
+	GraduationCap,
+	Layers,
 	Linkedin,
 	Mail,
-	ExternalLink,
-	ArrowUpRight,
-	Code2,
 	Terminal,
-	Database,
-	Layers,
-	Briefcase,
-	GraduationCap,
 } from "lucide-react";
-import clsx from "clsx";
 import { useRef, useState } from "react";
 
 export const Route = createFileRoute("/")({
@@ -22,7 +21,7 @@ export const Route = createFileRoute("/")({
 
 // --- Data ---
 
-const SOCIALS = [
+const _SOCIALS = [
 	{
 		name: "GitHub",
 		icon: <Github className="w-5 h-5" />,
@@ -107,8 +106,7 @@ const PROJECTS = [
 	{
 		id: "multigov",
 		title: "Multigov",
-		description:
-			"Cross-chain governance infrastructure built for the Wormhole Foundation.",
+		description: "Cross-chain governance infrastructure built for the Wormhole Foundation.",
 		tags: ["TypeScript", "Wormhole", "Cross-chain"],
 		href: "https://github.com/wormhole-foundation/multigov",
 	},
@@ -130,13 +128,7 @@ const EDUCATION = [
 
 const SKILLS = {
 	Languages: ["TypeScript", "Solidity", "Python", "JavaScript", "SQL"],
-	Frontend: [
-		"React",
-		"Next.js",
-		"TanStack Query",
-		"Tailwind CSS",
-		"Framer Motion",
-	],
+	Frontend: ["React", "Next.js", "TanStack Query", "Tailwind CSS", "Framer Motion"],
 	Web3: ["Wagmi", "Viem", "Ethers.js", "Foundry", "GraphQL"],
 	"Backend & Tools": ["Node.js", "PostgreSQL", "Git", "Docker", "AWS"],
 };
@@ -235,8 +227,7 @@ function Card({
 				style={{
 					opacity,
 					background: `radial-gradient(400px circle at ${position.x}px ${position.y}px, rgba(0, 255, 0, 0.2), transparent 40%)`,
-					maskImage:
-						"linear-gradient(black, black), linear-gradient(black, black)",
+					maskImage: "linear-gradient(black, black), linear-gradient(black, black)",
 					maskClip: "content-box, border-box",
 					maskComposite: "exclude",
 					WebkitMaskComposite: "xor",
@@ -274,16 +265,13 @@ function Portfolio() {
 					</h1>
 
 					<div className="space-y-4">
-						<h2 className="text-2xl md:text-3xl font-medium text-text-main">
-							Marco Mariscal
-						</h2>
+						<h2 className="text-2xl md:text-3xl font-medium text-text-main">Marco Mariscal</h2>
 						<p className="w-full text-lg text-text-muted leading-relaxed">
-							Senior software engineer specializing in complex DeFi systems,
-							protocol interfaces, and on-chain integrations across the EVM
-							ecosystem. I’ve shipped production governance tooling and protocol
-							infrastructure for leading projects including Wormhole’s Multigov,
-							Uniswap Foundation’s Seatbelt (via Tally), Seamless Protocol’s
-							interface, and zkSync governance admin.
+							Senior software engineer specializing in complex DeFi systems, protocol interfaces,
+							and on-chain integrations across the EVM ecosystem. I’ve shipped production governance
+							tooling and protocol infrastructure for leading projects including Wormhole’s
+							Multigov, Uniswap Foundation’s Seatbelt (via Tally), Seamless Protocol’s interface,
+							and zkSync governance admin.
 						</p>
 					</div>
 				</motion.div>
@@ -460,24 +448,15 @@ function Portfolio() {
 						viewport={{ once: true, margin: "-50px" }}
 					>
 						{Object.entries(SKILLS).map(([category, skills]) => (
-							<Card
-								key={category}
-								className="flex flex-col gap-6 p-8 relative overflow-hidden"
-							>
+							<Card key={category} className="flex flex-col gap-6 p-8 relative overflow-hidden">
 								{/* Grid Background Pattern */}
 								<div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
 								<div className="relative z-10">
 									<h3 className="text-xl font-semibold text-text-main mb-6 flex items-center gap-3">
-										{category === "Languages" && (
-											<Code2 className="w-5 h-5 text-text-muted" />
-										)}
-										{category === "Frontend" && (
-											<Layers className="w-5 h-5 text-text-muted" />
-										)}
-										{category === "Web3" && (
-											<Database className="w-5 h-5 text-text-muted" />
-										)}
+										{category === "Languages" && <Code2 className="w-5 h-5 text-text-muted" />}
+										{category === "Frontend" && <Layers className="w-5 h-5 text-text-muted" />}
+										{category === "Web3" && <Database className="w-5 h-5 text-text-muted" />}
 										{category === "Backend & Tools" && (
 											<Terminal className="w-5 h-5 text-text-muted" />
 										)}
