@@ -13,3 +13,4 @@ count.txt
 todos.json
 *.vscode
 *.DS_Store
+.vercel
