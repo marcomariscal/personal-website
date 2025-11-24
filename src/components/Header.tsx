@@ -45,12 +45,13 @@ export default function Header() {
 						{/* Desktop Nav Links */}
 						<nav className="hidden md:flex items-center gap-1">
 							{navLinks.map((link) => (
-								<a
+								<motion.a
 									key={link.name}
 									href={link.href}
 									className="relative px-3 py-2 text-[14px] font-medium transition-colors duration-200"
 									onMouseEnter={() => setHoveredNav(link.name)}
 									onMouseLeave={() => setHoveredNav(null)}
+									whileTap={{ scale: 0.95 }}
 								>
 									{hoveredNav === link.name && (
 										<motion.span
@@ -68,7 +69,7 @@ export default function Header() {
 									>
 										{link.name}
 									</span>
-								</a>
+								</motion.a>
 							))}
 						</nav>
 					</div>
@@ -129,14 +130,15 @@ export default function Header() {
 					>
 						<nav className="flex flex-col p-6 gap-4">
 							{navLinks.map((link) => (
-								<a
+								<motion.a
 									key={link.name}
 									href={link.href}
 									className="text-lg font-medium text-[var(--color-text-main)] hover:text-[var(--color-primary)] transition-colors"
 									onClick={() => setIsMenuOpen(false)}
+									whileTap={{ scale: 0.95 }}
 								>
 									{link.name}
-								</a>
+								</motion.a>
 							))}
 							<div className="h-px bg-[var(--color-border)] my-2" />
 							<div className="flex items-center gap-6">
