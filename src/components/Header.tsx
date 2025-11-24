@@ -19,12 +19,12 @@ export default function Header() {
     closed: { 
       opacity: 0, 
       height: 0,
-      transition: { duration: 0.2, ease: "easeInOut" }
+      transition: { duration: 0.2, ease: "easeInOut" as const }
     },
     open: { 
       opacity: 1, 
       height: "auto",
-      transition: { duration: 0.3, ease: "easeOut" }
+      transition: { duration: 0.3, ease: "easeOut" as const }
     }
   }
 

@@ -35,7 +35,7 @@ const EXPERIENCE = [
     company: 'ScopeLift',
     period: 'Jan 2024 - Present',
     description:
-      'Building core infrastructure for DeFi protocols. Specializing in TypeScript, smart contract integration, and governance tooling.',
+      'Designing and building complex DeFi systems, protocol interfaces, and on-chain governance tooling for leading protocols including Wormhole, Uniswap, Seamless, and zkSync.',
     tech: ['TypeScript', 'React', 'Wagmi', 'Viem'],
   },
   {
@@ -207,7 +207,7 @@ function Card({
         className="pointer-events-none absolute -inset-px transition duration-300"
         style={{
           opacity,
-          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(0, 255, 0, 0.06), transparent 40%)`
+          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(0, 255, 0, 0.15), transparent 40%)`
         }}
       />
       
@@ -216,7 +216,7 @@ function Card({
         className="pointer-events-none absolute -inset-px transition duration-300"
         style={{
           opacity,
-          background: `radial-gradient(400px circle at ${position.x}px ${position.y}px, rgba(0, 255, 0, 0.1), transparent 40%)`,
+          background: `radial-gradient(400px circle at ${position.x}px ${position.y}px, rgba(0, 255, 0, 0.2), transparent 40%)`,
           maskImage: 'linear-gradient(black, black), linear-gradient(black, black)',
           maskClip: 'content-box, border-box',
           maskComposite: 'exclude',
@@ -250,7 +250,7 @@ function Portfolio() {
           transition={{ duration: 0.5 }}
           className="mb-32 space-y-6"
         >
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-text-main">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-text-main">
             Software Engineer
           </h1>
           
@@ -259,7 +259,7 @@ function Portfolio() {
               Marco Mariscal
             </h2>
             <p className="text-lg text-text-muted max-w-xl leading-relaxed">
-              Building decentralized infrastructure and tools for the future of finance.
+              Senior software engineer specializing in complex DeFi systems, protocol interfaces, and on-chain integrations across the EVM ecosystem. I’ve shipped production governance tooling and protocol infrastructure for leading projects including Wormhole’s Multigov, Uniswap Foundation’s Seatbelt (via Tally), Seamless Protocol’s interface, and zkSync governance admin.
             </p>
           </div>
         </motion.div>
