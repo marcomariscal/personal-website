@@ -53,7 +53,7 @@ const EXPERIENCE = [
 		id: "cozy",
 		role: "Software Engineer",
 		company: "Cozy Finance",
-		period: "Nov 2023 - Nov 2023",
+		period: "Nov 2023",
 		description:
 			"Successfully delivered a key feature for Cozy Finance within a one-month contract, demonstrating rapid adaptability and efficient, high-quality coding practices.",
 		tech: ["React.js", "TypeScript"],
@@ -71,7 +71,7 @@ const EXPERIENCE = [
 		id: "springboard",
 		role: "Software Engineering Fellow",
 		company: "Springboard",
-		period: "2020 - 2021",
+		period: "Jan 2020 - Oct 2020",
 		description:
 			"Intensive software engineering bootcamp covering full-stack development, algorithms, and data structures. Completed capstone projects in Python and JavaScript.",
 		tech: ["Python", "JavaScript", "Full Stack"],
@@ -307,7 +307,7 @@ function Portfolio() {
 											<h3 className="text-xl font-semibold text-text-main flex items-center gap-2">
 												{job.role}
 											</h3>
-											<span className="text-sm font-mono text-text-subtle mt-1 md:mt-0 bg-white/5 px-2 py-1 rounded">
+											<span className="text-sm font-mono text-text-muted mt-1 md:mt-0 bg-white/10 px-2 py-1 rounded">
 												{job.period}
 											</span>
 										</div>
@@ -408,7 +408,7 @@ function Portfolio() {
 											<h3 className="text-xl font-semibold text-text-main flex items-center gap-2">
 												{edu.school}
 											</h3>
-											<span className="text-sm font-mono text-text-subtle mt-1 md:mt-0 bg-white/5 px-2 py-1 rounded">
+											<span className="text-sm font-mono text-text-muted mt-1 md:mt-0 bg-white/10 px-2 py-1 rounded">
 												{edu.period}
 											</span>
 										</div>

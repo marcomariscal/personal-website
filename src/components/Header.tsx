@@ -56,14 +56,14 @@ export default function Header() {
 									{hoveredNav === link.name && (
 										<motion.span
 											layoutId="nav-hover"
-											className="absolute inset-0 bg-[var(--color-surface-hover)] rounded-[var(--radius-8)] -z-10"
+											className="absolute inset-0 bg-white/10 rounded-[var(--radius-8)] -z-10"
 											transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
 										/>
 									)}
 									<span
 										className={
 											hoveredNav === link.name
-												? "text-[var(--color-primary)]"
+												? "text-[var(--color-text-main)]"
 												: "text-[var(--color-text-muted)]"
 										}
 									>
