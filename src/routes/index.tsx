@@ -42,7 +42,7 @@ const _SOCIALS = [
 const EXPERIENCE = [
 	{
 		id: "scopelift",
-		role: "Software Engineer",
+		role: "Senior Software Engineer",
 		company: "ScopeLift",
 		period: "Jan 2024 - Present",
 		description:
@@ -261,7 +261,7 @@ function Portfolio() {
 					className="mb-32 space-y-6"
 				>
 					<h1 className="text-4xl md:text-6xl font-bold tracking-tight text-text-main">
-						Software Engineer
+						Senior Software Engineer
 					</h1>
 
 					<div className="space-y-4">
