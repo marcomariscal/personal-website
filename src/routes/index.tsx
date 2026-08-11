@@ -238,17 +238,32 @@ function Portfolio() {
 					className="mb-32 space-y-6"
 				>
 					<h1 className="text-4xl md:text-6xl font-bold tracking-tight text-text-main">
-						I build products end to end.
+						Senior Software Engineer
 					</h1>
 
 					<div className="space-y-4">
-						<h2 className="text-2xl md:text-3xl font-medium text-text-main">
-							Marco Mariscal · Senior Software Engineer
-						</h2>
+						<h2 className="text-2xl md:text-3xl font-medium text-text-main">Marco Mariscal</h2>
 						<p className="w-full text-lg text-text-muted leading-relaxed">
-							I lead the three-person team running Cactus, a production governance platform. I also
-							built and launched Vero, an AI strength coach for iOS. My work spans product,
-							frontend, backend systems, infrastructure, and EVM protocols.
+							I lead the three-person team running{" "}
+							<a
+								href="https://www.tally.xyz"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="font-medium text-text-main underline decoration-[var(--color-primary)]/60 underline-offset-4 transition-colors hover:text-[var(--color-primary)]"
+							>
+								Cactus
+							</a>
+							, a production governance platform. I also built and launched{" "}
+							<a
+								href="https://apps.apple.com/us/app/vero-strength-coach/id6748659210"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="font-medium text-text-main underline decoration-[var(--color-primary)]/60 underline-offset-4 transition-colors hover:text-[var(--color-primary)]"
+							>
+								Vero
+							</a>
+							, an AI strength coach for iOS. My work spans product, frontend, backend systems,
+							infrastructure, and EVM protocols.
 						</p>
 					</div>
 				</motion.div>
