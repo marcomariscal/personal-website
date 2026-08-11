@@ -6,11 +6,9 @@ import {
 	Briefcase,
 	Code2,
 	Database,
-	Github,
 	GraduationCap,
 	Layers,
-	Linkedin,
-	Mail,
+	Sparkles,
 	Terminal,
 } from "lucide-react";
 import { useRef, useState } from "react";
@@ -21,24 +19,6 @@ export const Route = createFileRoute("/")({
 
 // --- Data ---
 
-const _SOCIALS = [
-	{
-		name: "GitHub",
-		icon: <Github className="w-5 h-5" />,
-		href: "https://github.com/marcomariscal",
-	},
-	{
-		name: "LinkedIn",
-		icon: <Linkedin className="w-5 h-5" />,
-		href: "https://www.linkedin.com/in/marcomariscal",
-	},
-	{
-		name: "Email",
-		icon: <Mail className="w-5 h-5" />,
-		href: "mailto:marco.a.mariscal@gmail.com",
-	},
-];
-
 const EXPERIENCE = [
 	{
 		id: "scopelift",
@@ -46,8 +26,8 @@ const EXPERIENCE = [
 		company: "ScopeLift",
 		period: "Jan 2024 - Present",
 		description:
-			"Designing and building complex DeFi systems, protocol interfaces, and on-chain governance tooling for leading protocols including Wormhole, Uniswap, Seamless, and zkSync.",
-		tech: ["TypeScript", "React", "Wagmi", "Viem"],
+			"Lead the three-person team that took over and runs Cactus, owning technical direction, infrastructure, delivery, and client-facing execution. Also shipped MultiGov cross-chain contracts and protocol work for ZKsync, Uniswap, and Seamless.",
+		tech: ["TypeScript", "React", "Node.js", "PostgreSQL", "Solidity"],
 	},
 	{
 		id: "cozy",
@@ -55,8 +35,8 @@ const EXPERIENCE = [
 		company: "Cozy Finance",
 		period: "Nov 2023",
 		description:
-			"Successfully delivered a key feature for Cozy Finance within a one-month contract, demonstrating rapid adaptability and efficient, high-quality coding practices.",
-		tech: ["React.js", "TypeScript"],
+			"Shipped a production React and TypeScript feature during a one-month engagement, owning delivery from codebase onboarding through release.",
+		tech: ["React", "TypeScript"],
 	},
 	{
 		id: "yield",
@@ -64,51 +44,52 @@ const EXPERIENCE = [
 		company: "Yield Protocol",
 		period: "Jul 2021 - Oct 2023",
 		description:
-			"Built and architected decentralized finance applications using React, Next.js, TypeScript, React Query, ethers.js, and TailwindCSS.",
-		tech: ["web3.js", "React.js", "Next.js", "TypeScript"],
+			"Built and operated the frontend and subgraph infrastructure for a fixed-rate DeFi protocol that reached $20M-$30M in TVL and approximately 6,000 users. Led frontend delivery for an eight-month expansion using interest-bearing assets across core protocol flows.",
+		tech: ["React", "TypeScript", "GraphQL", "Ethers.js"],
 	},
 	{
-		id: "springboard",
-		role: "Software Engineering Fellow",
-		company: "Springboard",
-		period: "Jan 2020 - Oct 2020",
+		id: "forwardpmx",
+		role: "Senior Strategist, Business Intelligence",
+		company: "ForwardPMX",
+		period: "Feb 2019 - Jun 2021",
 		description:
-			"Intensive software engineering bootcamp covering full-stack development, algorithms, and data structures. Completed capstone projects in Python and JavaScript.",
-		tech: ["Python", "JavaScript", "Full Stack"],
+			"Built Python and JavaScript reporting automation used across North American teams to reduce manual analytics and reporting work.",
+		tech: ["Python", "JavaScript", "SQL"],
 	},
 ];
 
 const PROJECTS = [
 	{
-		id: "seamless",
-		title: "Seamless Protocol",
+		id: "cactus",
+		title: "Cactus",
 		description:
-			'Decentralized lending and borrowing protocol. "Complex DeFi wrapped into simple tokens."',
-		tags: ["TypeScript", "DeFi", "Web3"],
-		href: "https://github.com/seamless-protocol/app",
+			"Production governance platform run by a three-person team. Cut infrastructure run rate by more than 50% and proposal-creation load time from 5.0s to 0.8s.",
+		tags: ["Product", "Infrastructure", "Governance"],
+		href: "https://www.tally.xyz",
 	},
 	{
-		id: "seatbelt",
-		title: "Governance Seatbelt",
+		id: "vero",
+		title: "Vero",
 		description:
-			"Tooling to make governance safer. Forked and enhanced for the Uniswap Foundation.",
-		tags: ["TypeScript", "Governance"],
-		href: "https://github.com/uniswapfoundation/governance-seatbelt",
-	},
-	{
-		id: "stealth",
-		title: "Stealth Address SDK",
-		description:
-			"TypeScript SDK for ERC-5564 Stealth Addresses and ERC-6538 Registry. Enabling privacy on EVM chains.",
-		tags: ["TypeScript", "Privacy", "SDK"],
-		href: "https://github.com/ScopeLift/stealth-address-sdk",
+			"AI strength coach for iOS. Designed, built, and launched independently across product, mobile, backend systems, subscriptions, evaluation, and release automation.",
+		tags: ["React Native", "Supabase", "AI"],
+		href: "https://apps.apple.com/us/app/vero-strength-coach/id6748659210",
 	},
 	{
 		id: "multigov",
-		title: "Multigov",
-		description: "Cross-chain governance infrastructure built for the Wormhole Foundation.",
-		tags: ["TypeScript", "Wormhole", "Cross-chain"],
+		title: "MultiGov",
+		description:
+			"Cross-chain governance infrastructure for Wormhole. Authored proposal contracts spanning EVM networks and Solana and remediated audit findings.",
+		tags: ["Solidity", "Solana", "Cross-chain"],
 		href: "https://github.com/wormhole-foundation/multigov",
+	},
+	{
+		id: "seamless",
+		title: "Seamless Protocol",
+		description:
+			"Built multichain transaction flows and product infrastructure for a DeFi application that packages leveraged positions into simple tokens.",
+		tags: ["TypeScript", "DeFi", "Multichain"],
+		href: "https://github.com/seamless-protocol/app",
 	},
 ];
 
@@ -127,10 +108,10 @@ const EDUCATION = [
 ];
 
 const SKILLS = {
-	Languages: ["TypeScript", "Solidity", "Python", "JavaScript", "SQL"],
-	Frontend: ["React", "Next.js", "TanStack Query", "Tailwind CSS", "Framer Motion"],
-	Web3: ["Wagmi", "Viem", "Ethers.js", "Foundry", "GraphQL"],
-	"Backend & Tools": ["Node.js", "PostgreSQL", "Git", "Docker", "AWS"],
+	Product: ["TypeScript", "JavaScript", "React", "React Native", "Next.js", "Expo"],
+	Systems: ["Node.js", "PostgreSQL", "Supabase", "GraphQL", "Docker", "AWS"],
+	Protocols: ["Solidity", "Foundry", "Wagmi", "Viem", "Ethers.js"],
+	AI: ["LLM applications", "Agent workflows", "Evaluation systems"],
 };
 
 // --- Components ---
@@ -245,13 +226,9 @@ function Card({
 	);
 }
 
-import Header from "../components/Header";
-
 function Portfolio() {
 	return (
 		<div className="min-h-screen w-full">
-			<Header />
-
 			<main className="max-w-3xl mx-auto px-6 py-32 md:py-40">
 				{/* Hero Section */}
 				<motion.div
@@ -261,17 +238,17 @@ function Portfolio() {
 					className="mb-32 space-y-6"
 				>
 					<h1 className="text-4xl md:text-6xl font-bold tracking-tight text-text-main">
-						Senior Software Engineer
+						I build products end to end.
 					</h1>
 
 					<div className="space-y-4">
-						<h2 className="text-2xl md:text-3xl font-medium text-text-main">Marco Mariscal</h2>
+						<h2 className="text-2xl md:text-3xl font-medium text-text-main">
+							Marco Mariscal · Senior Software Engineer
+						</h2>
 						<p className="w-full text-lg text-text-muted leading-relaxed">
-							Senior software engineer specializing in complex DeFi systems, protocol interfaces,
-							and on-chain integrations across the EVM ecosystem. I’ve shipped production governance
-							tooling and protocol infrastructure for leading projects including Wormhole’s
-							Multigov, Uniswap Foundation’s Seatbelt (via Tally), Seamless Protocol’s interface,
-							and zkSync governance admin.
+							I lead the three-person team running Cactus, a production governance platform. I also
+							built and launched Vero, an AI strength coach for iOS. My work spans product,
+							frontend, backend systems, infrastructure, and EVM protocols.
 						</p>
 					</div>
 				</motion.div>
@@ -454,12 +431,10 @@ function Portfolio() {
 
 								<div className="relative z-10">
 									<h3 className="text-xl font-semibold text-text-main mb-6 flex items-center gap-3">
-										{category === "Languages" && <Code2 className="w-5 h-5 text-text-muted" />}
-										{category === "Frontend" && <Layers className="w-5 h-5 text-text-muted" />}
-										{category === "Web3" && <Database className="w-5 h-5 text-text-muted" />}
-										{category === "Backend & Tools" && (
-											<Terminal className="w-5 h-5 text-text-muted" />
-										)}
+										{category === "Product" && <Code2 className="w-5 h-5 text-text-muted" />}
+										{category === "Systems" && <Database className="w-5 h-5 text-text-muted" />}
+										{category === "Protocols" && <Layers className="w-5 h-5 text-text-muted" />}
+										{category === "AI" && <Sparkles className="w-5 h-5 text-text-muted" />}
 										{category}
 									</h3>
 									<div className="flex flex-wrap gap-2">
