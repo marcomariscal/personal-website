@@ -15,12 +15,12 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "Marco Mariscal - Lead Engineer",
+				title: "Marco Mariscal - Lead Software Engineer",
 			},
 			{
 				name: "description",
 				content:
-					"Lead engineer building products end to end across web, mobile, backend systems, infrastructure, AI, and EVM protocols.",
+					"Lead software engineer building products end to end across web, mobile, backend systems, infrastructure, AI, and EVM protocols.",
 			},
 		],
 		links: [
