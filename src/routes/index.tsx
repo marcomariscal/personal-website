@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
 const EXPERIENCE = [
 	{
 		id: "scopelift",
-		role: "Senior Software Engineer",
+		role: "Lead Engineer",
 		company: "ScopeLift",
 		period: "Jan 2024 - Present",
 		description:
@@ -238,7 +238,7 @@ function Portfolio() {
 					className="mb-32 space-y-6"
 				>
 					<h1 className="text-4xl md:text-6xl font-bold tracking-tight text-text-main">
-						Senior Software Engineer
+						Lead Engineer
 					</h1>
 
 					<div className="space-y-4">
